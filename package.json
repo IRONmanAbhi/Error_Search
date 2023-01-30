@@ -1,0 +1,43 @@
+{
+  "name": "error-search",
+  "displayName": "Error Search",
+  "description": "This extension searches the stack overflow for any error present in your program and it must be answered on the stack overflow",
+  "version": "0.1.0",
+  "publisher": "Abhinav Yadav and Mohd. Ammar",
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onCommand: extension.runPython"
+  ],
+  "icon": "./Stack_Overflow_icon.svg.png",
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.runPython",
+        "title": "Run Python"
+      }
+    ]
+  },
+  "scripts": {
+    "start": "node extension.js"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "vscode": "^1.44.0",
+    "requests": "^2.28.2",
+    "charset-normalizer": "^3.0.1",
+    "idna": "^3.4",
+    "packaging": "^23.0",
+    "python-dotenv": "^0.21.1",
+    "setuptools": "^65.5.0",
+    "tqdm": "^4.64.1",
+    "urllib3": "^1.26.14",
+    "webdriver-manager": "^3.8.5"
+  }
+}
