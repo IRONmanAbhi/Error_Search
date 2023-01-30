@@ -5,9 +5,6 @@ import requests
 import webbrowser
 
 
-print("inside main.py")
-
-
 def execute_return(cmd):
     args = cmd.split()
     proc = Popen(args, stdout=PIPE, stderr=PIPE)
@@ -48,5 +45,3 @@ if __name__ == "__main__":
         get_urls(json1)
         get_urls(json2)
         get_urls(json)
-
-print("End of script")

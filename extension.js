@@ -12,7 +12,6 @@ function activate(context) {
         return;
       }
       let filePath = editor.document.uri.fsPath;
-      console.log(filePath, "here");
       let command = `python main.py ${filePath}`;
       exec(command, (er, stdout, stderr) => {
         vscode.window.showInformationMessage(stdout);
