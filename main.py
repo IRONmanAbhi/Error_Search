@@ -34,7 +34,7 @@ def get_urls(json_dict):
 
 if __name__ == "__main__":
     file_name = sys.argv[1]
-    print(file_name)
+    # print(file_name)
     subprocess.run(["python", file_name])
     op, err = execute_return("python {0}".format(file_name))
     error_message = err.decode("utf-8").strip().split("\r\n")[-1]
